@@ -1,0 +1,128 @@
+/* Importação da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+/* CSS RESET */
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+/* Global */
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Layout */
+
+.container{
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* Topo do site */
+
+#topo{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+}
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+#inicio{
+    height: 60px;
+}
+#logo img{
+    height: 128px;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+    right:0;
+}
+nav label{
+    font-size: 3em;
+    padding-right: 15px;
+}
+nav ul{
+    height: 100vh;
+    width: 100%;
+    background-color: #333b5e;
+    position:fixed;
+    top:60px;
+    right: -100%;
+    transition:all 0.5s;
+}
+nav ul li{
+    padding:20px;
+    border-bottom: 1px solid darkgray;
+}
+nav ul li a{
+    color: white;
+}
+
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+}
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+}
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+    /* Cabeçalho */
+    #inicio{
+        height:120px;
+    }
+    #logo img{
+        height: 189px;
+    }
+    nav label{
+        display: none;
+    }
+    nav ul{
+        position:static;
+        height: 100vh;
+        width: 100%;
+        background-color: transparent;
+        margin-top: 50px;
+        transition:none;
+    }
+    nav ul li{
+        border-bottom: none;
+        display:inline-block;
+    }
+    nav ul li a{
+        color:black;
+    }
+    nav ul li a:hover{
+        color: #990435;
+    }
+}
