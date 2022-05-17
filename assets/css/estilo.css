@@ -34,6 +34,10 @@ li{
     display: flex;
     align-items: center;
 }
+.flex3{
+    display: flex;
+    flex-direction: column;
+}
 .botao{
     color: #fff;
     font-size:1.3em;
@@ -133,6 +137,21 @@ main h2{
     margin-right:10px;
 }
 
+/* One Page */
+#OnePage{
+    padding: 50px 10px;
+}
+#OnePage h2{
+    margin-bottom: 10px;
+}
+#OnePage p{
+    margin-bottom: 25px;
+}
+#Video iframe{
+    width: 340px;
+    height: 191px;
+}
+
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width:576px){
     /* Layout */
@@ -143,6 +162,11 @@ main h2{
     /* Destaque */
     main h1, main h2{
         text-shadow: #000 0.05em 0.05em 0.05em;
+    }
+    /* One Page */
+    #Video iframe{
+        width: 560px;
+        height: 315px;
     }
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -215,5 +239,10 @@ main h2{
     }
     #sobre{
         background-attachment: fixed;
+    }
+    /* One Page */
+    .flex3{
+        flex-direction: row;
+        align-items: center;
     }
 }
