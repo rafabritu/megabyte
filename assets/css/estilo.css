@@ -90,6 +90,7 @@ main{
     height: 75vh;;
     background: url(../img/banner.jpg);
     background-size: cover;
+    background-position: center;
     color:#fff;
     display: flex;
     flex-direction: column;
@@ -108,8 +109,9 @@ main h2{
 
 #sobre{
     padding: 50px 0;
-    background: url(/assets/img/background.png);
+    background: url(../img/background.png);
     background-size:cover;
+    background-position: center;
 }
 #destaque-sobre{
     display: none;
@@ -198,5 +200,17 @@ main h2{
     }
     nav ul li a:hover{
         color: #990435;
+    }
+
+    /* Sobre */
+    #destaque-sobre{
+        display: inline;
+    }
+    #destaque-sobre img{
+        border-radius: 50%;
+        margin-right:50px;
+    }
+    #sobre{
+        background-attachment: fixed;
     }
 }
