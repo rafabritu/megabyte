@@ -23,159 +23,7 @@ li{
 
 /* Layout */
 
-.container{
-    margin: 0 auto;
-}
-.flex{
-    display: flex;
-    justify-content: space-between;
-}
-.flex2{
-    display: flex;
-    align-items: center;
-}
-.flex3{
-    display: flex;
-    flex-direction: column;
-}
-.botao{
-    color: #fff;
-    font-size:1.3em;
-    font-weight: 700;
-    background-color: #c00000;
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-}
-/* Topo do site */
-
-#topo{
-    position:fixed;
-    right: 10px;
-    bottom: 10px;
-}
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-#inicio{
-    height: 60px;
-}
-#logo img{
-    height: 128px;
-}
-#check{
-    display: none;
-}
-#check:checked ~ ul{
-    right:0;
-}
-nav label{
-    font-size: 3em;
-    position:fixed;
-    top:5px;
-    right:15px;
-    color:rgba(0,0,0,0.5);
-}
-nav ul{
-    height: 100vh;
-    width: 100%;
-    background-color: #333b5e;
-    position:fixed;
-    top:60px;
-    right: -100%;
-    transition:all 0.5s;
-}
-nav ul li{
-    padding:20px;
-    border-bottom: 1px solid darkgray;
-}
-nav ul li a{
-    color: white;
-}
-
-/*Destaque*/
-main{
-    height: 75vh;;
-    background: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color:#fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-main h1{
-    font-size: 2.5em;
-}
-main h2{
-    font-size: 1em;
-    margin: 20px 0 50px 0;
-}
-
-/* Sobre */
-
-#sobre{
-    padding: 50px 0;
-    background: url(../img/background.png);
-    background-size:cover;
-    background-position: center;
-}
-#destaque-sobre{
-    display: none;
-}
-#texto-sobre{
-    color:#fff;
-    padding:0 10px;
-}
-#texto-sobre h2{
-    margin-bottom: 10px;
-}
-.topicos-sobre{
-    margin-top:20px;
-}
-.topicos-sobre img{
-    margin-right:10px;
-}
-
-/* One Page */
-#OnePage{
-    padding: 50px 10px;
-}
-#OnePage h2{
-    margin-bottom: 10px;
-}
-#OnePage p{
-    margin-bottom: 25px;
-}
-#Video iframe{
-    width: 340px;
-    height: 191px;
-}
-
-/* Wireframe */
-
-#wireframe{
-    padding:50px 0;
-    background: url(../img/background.png);
-    background-size:cover;
-    background-position: center;
-}
-#textoWire{
-    color: #fff;
-    padding: 0 10px;
-}
-#textoWire h2{
-    margin-bottom: 10px;
-}
-#textoWire p{
-    margin-bottom: 40px;
-}
-#textoWire span{
-    display: none;
-}
-#qrcode{
-    display: none;
-}
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width:576px){
@@ -183,31 +31,11 @@ main h2{
     .container{
         max-width: 540px;
     }
-
-    /* Destaque */
-    main h1, main h2{
-        text-shadow: #000 0.05em 0.05em 0.05em;
-    }
-    /* One Page */
-    #Video iframe{
-        width: 560px;
-        height: 315px;
-    }
 }
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width:768px){
     .container{
         max-width: 720px;
-    }
-    /* Destaque */
-    main {
-        height: 45vh;
-    }
-    main h1{
-        font-size: 5.5em;
-    }
-    main h2{
-        font-size: 2em;
     }
 }
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -215,72 +43,10 @@ main h2{
     .container{
         max-width: 960px;
     }
-    /* Destaque */
-    main{
-        height: 70vh;
-    }
 }
 /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width:1200px){
     .container{
         max-width: 1140px;
-    }
-    /* Cabeçalho */
-    #inicio{
-        height:120px;
-    }
-    #logo img{
-        height: 189px;
-    }
-    nav label{
-        display: none;
-    }
-    nav ul{
-        position:static;
-        height: 100vh;
-        width: 100%;
-        background-color: transparent;
-        margin-top: 50px;
-        transition:none;
-    }
-    nav ul li{
-        border-bottom: none;
-        display:inline-block;
-    }
-    nav ul li a{
-        color:black;
-    }
-    nav ul li a:hover{
-        color: #990435;
-    }
-
-    /* Sobre */
-    #destaque-sobre{
-        display: inline;
-    }
-    #destaque-sobre img{
-        border-radius: 50%;
-        margin-right:50px;
-    }
-    #sobre{
-        background-attachment: fixed;
-    }
-    /* One Page */
-    .flex3{
-        flex-direction: row;
-        align-items: center;
-    }
-    /* Wireframe */
-    #wireframe{
-        background-attachment: fixed;
-    }
-    #textoWire span{
-        display: inline;
-    }
-    #qrcode{
-        display: inline;
-    }
-    #qrcode img{
-        width: 225px;
     }
 }
