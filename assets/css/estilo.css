@@ -8,7 +8,10 @@
     padding:0;
     border:0;
 }
-/* Global */
+.icon{
+    height: 24px;
+}
+/* Global >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 body{
     font-family: 'Rubik', sans-serif;
@@ -16,12 +19,24 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 li{
     list-style: none;
 }
+.flex{
+    display: flex;
+    align-items: center;
+}
 
-/* Layout */
+/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Cabeçalho de contatos */
+#contato-topo{
+    justify-content: space-between;
+}
+
+
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
