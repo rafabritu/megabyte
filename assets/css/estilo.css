@@ -1,5 +1,5 @@
 /* Importação da fonte */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Nunito:wght@200;400;700&display=swap');
 
 /* CSS RESET */
 
@@ -12,14 +12,41 @@
     height: 24px;
 }
 /* Global >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+:root{
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
 
-body{
-    font-family: 'Rubik', sans-serif;
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat','sans-serif';
     font-size: 1em;
+}
+p{
+    font-family: 'Nunito','sans-serif';
 }
 a{
     text-decoration: none;
-    color: black;
+    font-family: 'Nunito','sans-serif';
+    color: var(--bs-dark);
 }
 li{
     list-style: none;
@@ -28,15 +55,39 @@ li{
     display: flex;
     align-items: center;
 }
+.maiusculo{
+    text-transform: uppercase;
+}
 
-/* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* Geral >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho de contatos */
 #contato-topo{
     justify-content: space-between;
+    background-color: var(--bs-primary);
+    height: 50px;
 }
-
-
+#contato-topo a,p{
+    color: var(--bs-white);
+    font-weight:400;
+    font-size: 14px;
+}
+.contato{
+    margin-right: 20px;
+    padding-left: 20px;
+    border-left:1px solid #2a8af5;
+}
+.contato i{
+    margin-right: 10px;
+    color: var(--bs-white);
+}
+/* Destaque */
+#destaque{
+    background: url(/assets/img/background2.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 800px;
+}
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
