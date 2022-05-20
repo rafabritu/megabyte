@@ -51,6 +51,9 @@ a{
 li{
     list-style: none;
 }
+.container{
+    margin:0 auto;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -62,24 +65,35 @@ li{
 /* Geral >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Cabeçalho de contatos */
-#contato-topo{
-    justify-content: space-between;
+#contato-box{
     background-color: var(--bs-primary);
     height: 50px;
 }
-#contato-topo a,p{
+#contatos{
+    height: 50px;
+    justify-content: space-between;
+}
+#contatos a,p{
     color: var(--bs-white);
     font-weight:400;
     font-size: 14px;
 }
-.contato{
+.margem1{
     margin-right: 20px;
-    padding-left: 20px;
-    border-left:1px solid #2a8af5;
+}
+.divisor{
+    padding-right: 20px;
+    border-right:1px solid #2a8af5;
 }
 .contato i{
+    font-size: 18px;
     margin-right: 10px;
     color: var(--bs-white);
+}
+#contatos svg{
+    height: 15px;
+    margin-left: 15px;
+    fill: var(--bs-white);
 }
 /* Destaque */
 #destaque{
