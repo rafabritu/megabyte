@@ -61,6 +61,16 @@ li{
 .maiusculo{
     text-transform: uppercase;
 }
+.gradiente{
+    background-image: linear-gradient(90deg,#004fd2 0%,#a112dc 100%);
+}
+.botao{
+    display: inline-block;
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 /* Geral >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
@@ -95,12 +105,72 @@ li{
     margin-left: 15px;
     fill: var(--bs-white);
 }
+/* Cabeçalho de menus */
+.menu-topo{
+    height: 80px;
+    justify-content: space-between;
+    padding:0 50px;
+}
+.logo img{
+    height: 50px;
+}
+
+/* DROPDOWN */
+.dropdown{
+    margin-right: 10px;
+    position: relative;
+}
+.dropdown:hover>.droplist{
+    display: block;
+}
+.dropbtn{
+    padding: 29px 0;
+    font-weight: 600;
+}
+.dropbtn:hover{
+    background-color: #f3f3f3;
+}
+.droplist{
+    position: absolute;
+    z-index: 1;
+    top: 51px;
+    min-width: 200px;
+    display: none;
+}
+.droplist a{
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+}
+.droplist a:hover{
+    background-color:whitesmoke;
+}
+
+
 /* Destaque */
 #destaque{
     background: url(/assets/img/background2.jpg);
     background-position: center;
     background-size:cover;
     height: 800px;
+}
+#conteudo-destaque{
+    margin-left: 50px;
+}
+#conteudo-destaque #t1{
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+#conteudo-destaque #t2{
+    font-size: 1em;
+    margin-bottom: 40px;
+}
+h1{
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    margin-bottom:15px;
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

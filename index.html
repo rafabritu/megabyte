@@ -51,22 +51,35 @@
             <!-- Cabeçalho de menus -->
             <div class="menu-topo flex">
                 <div class="logo"><img src="assets/img/logo.png" alt=""></div>
-                <ul class="menu flex">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contato</a></li>
+                <ul class="flex">
+                    <li class="dropdown">
+                        <a class="dropbtn" href="#">Inicio</a>
+                        <div class="droplist">
+                            <a href="">Mapa do site</a>
+                            <a href="">Tecnologia</a>
+                            <a href="">Games</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn" href="#">Sobre nós</a>
+                        <div class="droplist">
+                            <a href="">A empresa</a>
+                            <a href="">Nossa missão</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a class="dropbtn" href="#">Serviços</a></li>
+                    <li class="dropdown"><a class="dropbtn" href="#">Blog</a></li>
+                    <li><a class="dropbtn" href="#">Contato</a></li>
                 </ul>
             </div>
         </header>
         <!-- Destaque  -->
-        <section id="destaque">
-            <div>
-                <p class="maiusculo">Qualidade & Agilidade</p>
-                <h1 class="maiusculo">Tecnologia da Informação</h1>
-                <p>Soluções em Informática para você e sua empresa.</p>
-                <a href="#">Faça um orçamento</a>
+        <section id="destaque" class="flex">
+            <div id="conteudo-destaque">
+                <p id='t1' class="maiusculo">// Qualidade & Agilidade</p>
+                <h1 class="maiusculo">Tecnologia da<br>Informação</h1>
+                <p id="t2">Soluções em Informática para você e sua empresa.</p>
+                <a class='gradiente botao' href="#">Faça um orçamento</a>
             </div>
         </section>
         <section id="sobre">
